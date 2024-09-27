@@ -1,0 +1,129 @@
+html{
+	background-image: url('../img/room_create1.jpg'), url('../img/cloth_00097.jpg');
+	background-repeat: no-repeat, norepeat;
+	background-position: center, center;
+	background-size: 35%,cover;
+}
+
+h2 {
+	display:block;
+	font-size:20px;
+	color:#400080;
+	text-align:center;
+}
+
+body {
+	font-family: "Noto Sans JP", sans-serif;/*フォント指定　JSPにもコード追加要*/
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+	background: #ffffff;
+	opacity: 0.9;
+	max-width:740px;
+	margin: 2% auto;
+	height:94%;
+	position: relative;
+}
+
+body {
+	font-size:20px;
+	text-align:center;
+}
+
+.box {
+	font-size:19px;
+	width: 200px;
+	height: 30px;
+}
+
+.create_button {
+	 width: 150px;
+	 font-size:18px;
+}
+.room_create {
+	background-color: transparent; /* 通常時の背景色 */
+    color:#3498db; /* 文字色 */
+    padding: 5px 10px; /* パディング */
+    font-size: 20px; /* フォントサイズ */
+    border: 1px solid #020d14; /* ボーダー */
+    cursor: pointer; /* ポインタに変化 */
+    transition: color 0.3s, border-color 0.3s; /* 画像変化のトランジション */
+    text-align: center; /* テキストを中央寄せ */
+    background-size: cover; /* 背景画像がボタンサイズに合わせて表示される*/
+}
+
+.room_create::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3498db;
+    font-size: 10px;
+    transition: opacity 0.3s;
+}
+
+.room_create:hover::before {
+    content: '';
+    opacity: 0; /* テキストを消す */
+}
+
+
+.room_create:hover {
+    border-color: transparent;
+}
+
+
+.room_create:hover {
+      background-image: url('../img/createicon.jpg'); /* ホバー時に表示する画像 */
+      background-size: 41%; /* 画像をボタンサイズに合わせる */
+      background-repeat: no-repeat; /* 画像が繰り返されないようにする*/
+      background-color: transparent; /* 背景色を透明にして画像を表示 */
+      background-position: center top; /* 画像の位置を調整*/
+      color: transparent; /* テキストの色をそのまま維持 */
+}
+
+.back_button {
+	position: relative;
+    width: 87px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #020d14;
+    color: #020d14;
+    font-size: 5px;
+    text-align: center;
+    line-height: 100px; /* ボタンの高さと一致させて中央揃えに */
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s, border-color 0.3s;
+    background-size: cover; /* 背景画像がボタンサイズに合わせて表示される */
+}
+
+.back_button::before {
+    content: '戻る';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size:20px;
+    transition: opacity 0.3s;
+}
+
+.back_button:hover::before {
+    content: '';
+    opacity: 0; /* テキストを消す */
+}
+
+
+.back_button:hover {
+    border-color: transparent;
+}
+
+
+.back_button:hover {
+    background-image: url('../img/backKey.jpg');
+    background-size: 30%; /* 画像をボタンサイズより大きく表示 */
+    background-repeat: no-repeat; /* 画像が繰り返されないようにする */
+    background-position: center top; /* 画像の位置を調整 */
+}

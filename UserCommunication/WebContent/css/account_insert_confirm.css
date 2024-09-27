@@ -1,0 +1,106 @@
+/*下記の内容で登録します*/
+/*9/18更新　*/
+/*9/19更新*/
+
+@charset "UTF-8";
+
+html{
+	height:100%;
+	background-image: url('../img/cloth_00097.jpg');
+	background-repeat: norepeat;
+	background-position: center;
+	background-size: cover;
+	height:100%;
+}
+body{
+	font-family: "Noto Sans JP", sans-serif;/*フォント指定　JSPにもコード追加要*/
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+	background: #ffffff;
+	opacity: 0.9;
+	max-width:740px;
+	margin: 2% auto;
+	height:94%;
+	position: relative;
+
+}
+
+h1{
+	font-size:28px;
+	color:#115c32;
+	text-align:center;
+	margin-top:20px
+
+}
+h2{
+	font-size:26px;
+	color: #115c32;
+	text-align:center;
+	margin: 20px;
+}
+form{
+	width:480px;
+	margin:auto;
+	text-align:center;
+	font-size:24px;
+}
+
+.text_i{
+	font-size:14px;
+	color:#115c32;
+}
+.text{
+
+	width: 100%;
+	margin: 15px 0;
+
+}
+.input{
+	width: 300px;
+	margin: auto;
+	text-align:center;
+	border: 0;
+	background: transparent;
+	font-size:19px;
+}
+
+/*テキストエリアの下線*/
+.text::after {
+  content: '';
+  display: block;
+  width: 350px;
+  height: 4px;
+  text-align:center;
+  margin:auto;
+  margin-top: -1px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #115c32;
+}
+
+.button{
+	margin-top: 20px;
+}
+a{
+	font-size:16px;
+	color: #000040;
+	margin:auto;
+	text-align:center;
+	width:180px;
+	position: absolute;
+	right:10px;
+	bottom: 10px;
+
+}
+a:hover{
+	font-size:24px;
+	color:#115c32;
+	cursor: pointer; /*マウスポインタを当てた時に、カーソルが指の形になる*/
+
+}
+
+input[type="submit"]:hover {
+	font-size:24px;
+	color:#115c32;
+	cursor: pointer; /*マウスポインタを当てた時に、カーソルが指の形になる*/
